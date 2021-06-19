@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+    background-color:rgba(197, 24, 24, 0.712);
+    box-sizing: border-box;
+}
+.section-div{
+    width:350px;
+    height:550px;
+    margin:70px auto 0px auto;
+    background-color: white;
+    border-radius:15px;
+    padding-left:20px;
+}
+.answer{
+    display: grid;
+    grid-template-rows: 50% auto;
+}
+.history{
+    padding:25px 35px;
+    font-size:25px;
+    height:20px;
+    color:rgb(73, 73, 73);
+    text-align: right;
+    letter-spacing:1.5px;
+    font-weight: bolder;
+    text-align: center;
+}
+.history p,.result p{
+    height:20px;
+}
+.result{
+    padding:10px 35px;
+    font-size:30px;
+    height:20px;
+    color:black;
+    text-align: right;
+}
+
+.operator,.operator-clear,.operator-remove,.number,.empty,.equal{
+    width:50px;
+    height:50px;
+    text-align: center;
+    margin:16px;
+    float:left;
+    border-radius:100%;
+    border:none;
+    font-size:21px;
+    font-weight:bold;
+}
+.number,.empty{
+    background-color: white;
+}
+.operator:active,.operator-clear:active,.operator-remove:active,.number:active,.empty:active,.equal:active{
+    font-size:20px;
+}
+.operator:focus,.operator-clear:focus,.operator-remove:focus,.number:focus,.empty:focus,.equal:focus{
+    outline:none;
+}
+button:nth-child(4){
+    font-size:23px;
+    background:skyblue;
+}
+button:nth-child(8){
+    font-size:23px;
+    background:rgb(226, 83, 26);
+}
+button:nth-child(12){
+    font-size:23px;
+    background:rgb(65, 230, 65);
+}
+button:nth-child(16){
+    font-size:23px;
+    background:rgb(253, 78, 145);
+}
+button.equal{
+    font-size:23px;
+    background:rgb(230, 45, 45);
+}
